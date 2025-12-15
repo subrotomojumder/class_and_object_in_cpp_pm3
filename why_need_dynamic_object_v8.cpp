@@ -15,16 +15,17 @@ public:
         this->gpa = gpa;
     }
 };
-Student *fun()
+Student* fun()
 {
     Student korim(8, 12, 2.50);
-    Student *p = &korim;
+    Student* p = &korim;
+    //  cout << (*p).roll << " " << (*p).cls << " " << (*p).gpa << endl;
     return p;
 }
 
 int main()
 {
-    Student * p = fun();
+    Student* p = fun(); // function return korar por sob delete kore dei
     cout << (*p).roll << " " << (*p).cls << " " << (*p).gpa << endl;
     return 0;
 }
